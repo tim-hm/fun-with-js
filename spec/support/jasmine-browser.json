@@ -9,5 +9,6 @@
   "helpers": [],
   "browser": {
     "name": "chrome"
-  }
+  },
+  "random": false
 }
