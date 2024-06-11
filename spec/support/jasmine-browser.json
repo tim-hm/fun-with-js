@@ -1,0 +1,13 @@
+{
+  "port": 3000,
+  "srcDir": "src",
+  "srcFiles": [],
+  "specDir": "dist",
+  "specFiles": [
+    "test.js"
+  ],
+  "helpers": [],
+  "browser": {
+    "name": "chrome"
+  }
+}
