@@ -28,6 +28,7 @@
     "stream-browserify": "^3.0.0",
     "vm-browserify": "^1.1.2",
     "webpack": "^5.92.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "nillion-client-browser": "file:/Users/tim/projects/NillionNetwork/nillion/feat/js-payments/target/nillion-release/nillion-client-browser/nillion-client-browser-npm.tar.gz"
   }
 }
