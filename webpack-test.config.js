@@ -8,9 +8,17 @@ module.exports = {
     filename: "test.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [],
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        use: "babel-loader",
+        exclude: /node_modules/,
+      },
+    ],
+  },
   resolve: {
-    modules: [__dirname, "spec", "src", "node_modules"],
+    modules: [__dirname, "spec", "node_modules"],
     extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
     fallback: {
       "crypto": require.resolve("crypto-browserify"),
@@ -19,18 +27,5 @@ module.exports = {
       "vm": require.resolve("vm-browserify"),
     },
   },
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        exclude: /node_modules/,
-        loader: require.resolve("babel-loader"),
-        resolve: {
-          fallback: {
-            "crypto": require.resolve("crypto-browserify"),
-          },
-        },
-      },
-    ],
-  },
+  plugins: [],
 }
